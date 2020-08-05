@@ -47,13 +47,13 @@
 </head>
 
 <body ng-app="mlApp" id="mesiboliveapp" ng-controller="roomController" style="overflow-x: none">
- <a href="https://github.com/mesibo/conferencing" style="color: grey; padding-bottom: 10px ; text-decoration:none">&nbsp;<img width="100px" src="assets/images/mesibo-logo-m.png">&nbsp;Live&nbsp;</a>
+ <a href="https://github.com/mesibo/conferencing" style="color: grey; padding-bottom: 10px ; text-decoration:none">&nbsp;<img width="50px" src="assets/images/RAW-full-logo-HR-B-final.png">&nbsp;Live&nbsp;</a>
  <span class="connection-indicator" style="width:10px" ng-style ="{'background-color': getStatusIndicator(mesibo_connection_status)}"></span>
 
- <span  style="color: #00868b;text-align: center; display: inline-block; margin:0px" ng-cloak="isMesiboConnected()">
+ <span  style="color: #808080;text-align: center; display: inline-block; margin:0px" ng-cloak="isMesiboConnected()">
 	 <div style="font-size: 25px">
 		 <i class="fa fa-comments" aria-hidden="true" ng-click="showPopupChat()" style = "cursor:pointer;padding-left: 10px;width: 50px" title="Group Chat">{{group_messsage_notification}}</i>
-		 <i class="fa fa-user-plus" aria-hidden="true" onclick="showInviteForm()" style = "color: #00868b; cursor:pointer;" ng-if="room.pin && room.spin" title="Invite"></i>
+		 <i class="fa fa-user-plus" aria-hidden="true" onclick="showInviteForm()" style = "color: #808080; cursor:pointer;" ng-if="room.pin && room.spin" title="Invite"></i>
 		 <i class="fa fa-power-off" aria-hidden="true" ng-click="exitRoomForm()" style = "cursor:pointer;   display: inline-block;" title="Exit Room"></i>
 	</div>
   </span>    
@@ -79,7 +79,7 @@
                                     </textarea>                                
                                     
                                     <div class="mx-auto" style="text-align: center; padding-top: 10px">
-                                      <button type="button" class="btn btn-success btn-sm" ng-click="copyInviteText(participant_type_publisher)" style="background-color: #00868b">
+                                      <button type="button" class="btn btn-success btn-sm" ng-click="copyInviteText(participant_type_publisher)" style="background-color: #808080">
                                         <i class="fa fa-copy" style="color: white; padding-right: 5px"></i>Copy Invite</button>
                                     </div> 
                                   </div>
@@ -95,7 +95,7 @@
                                     </textarea>                                
                                     
                                     <div class="mx-auto" style="text-align: center; padding-top:10px">
-                                      <button type="button" class="btn btn-success btn-sm" ng-click="copyInviteText(participant_type_subscriber)" style="background-color: #00868b">
+                                      <button type="button" class="btn btn-success btn-sm" ng-click="copyInviteText(participant_type_subscriber)" style="background-color: #808080">
                                         <i class="fa fa-copy" style="color: white; padding-right: 5px"></i>Copy Invite</button>
                                     </div> 
                                   </div>
@@ -186,7 +186,7 @@
                           <div class="self-publisher-panel" id="video-publisher-panel" style="border: 2px solid white;">
                                   <div class="d-flex h-100 justify-content-center">
                                     <div class="row" ng-show="publisher.streamOptions" style="position: fixed; margin-top: 1rem; text-align: center; z-index: 100"> 
-                                      <i class='fa fa-camera col-6'  ng-click="streamFromCamera()" style = "cursor:pointer; color: #00868b;font-size: 1.5em;" title="Camera" ></i>                 
+                                      <i class='fa fa-camera col-6'  ng-click="streamFromCamera()" style = "cursor:pointer; color: #808080;font-size: 1.5em;" title="Camera" ></i>                 
                                     </div>
                                     <div class="spinner-border text-light" style="position: fixed; margin-top: 1rem" role="status" ng-style="{'display': (!publisher.isConnected && !publisher.streamOptions) ? 'block':'none'}">
                                       <span class="sr-only">Loading...</span>
@@ -268,7 +268,7 @@
       <div id="Smallchat">
         <div class="Layout Layout-open Layout-expand Layout-right popup-main-div" id="popup_chat" style="background-color: #3F51B5;color: rgb(255, 255, 255);opacity: 5;border-radius: 10px; bottom: 0; margin-right: 10px!important;">
           <div class="Messenger_messenger">
-            <div class="Messenger_header" style="background-color:#00868b ; color: rgb(255, 255, 255); cursor: move;">
+            <div class="Messenger_header" style="background-color:#808080 ; color: rgb(255, 255, 255); cursor: move;">
               <div class="row" style="padding-left: 20px">
                 <p class="Messenger_prompt popup_display_name"  id ='popup_display_name' style="font-size:18px; padding-top:8px"> Name </p> 
                 <!-- <p class="text-white-small popup_status_indicator" style=" font-size:11px" id="popup_status_indicator" >Online</p> -->
@@ -349,7 +349,7 @@
         <!--=============== Log-out modal start ===============-->
         <!--Logout Modal -->
         <div class="container">
-          <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true" role="dialog" style="width: 100%;height: 100%; background-color: #00868b">
+          <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true" role="dialog" style="width: 100%;height: 100%; background-color: #808080">
             <div class="modal-dialog">
 
               <div class="modal-content">
